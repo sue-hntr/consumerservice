@@ -1,0 +1,22 @@
+{
+  "name": "crsexpress",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node ./server"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bcrypt": "^3.0.6",
+    "body-parser": "^1.13.3",
+    "connect-mongo": "^2.0.3",
+    "express": "^4.16.4",
+    "express-session": "^1.16.1",
+    "gh-pages": "^2.0.1",
+    "if-env": "^1.0.4",
+    "mongoose": "^4.5.0",
+    "morgan": "^1.9.1",
+    "react": "^16.8.6",
+    "react-router-dom": "^5.0.0"
+  },
+  "license": "MIT"
+}
