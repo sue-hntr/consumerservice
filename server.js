@@ -18,7 +18,7 @@ const MongoStore = require('connect-mongo')(session);
 // Heroku Mongo DB connection
 // mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/crsexpress", { useNewUrlParser: true })
 // local mongodb connection
-mongoose.connect("mongodb://localhost:27017/crsexpress",  { useNewUrlParser: true });
+mongoose.connect("mongodb://localhost:27017/consumerservice",  { useNewUrlParser: true });
 const db = mongoose.connection;
 // mongo error
 db.on('error', console.error.bind(console, 'connection error:'));
