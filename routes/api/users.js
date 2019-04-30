@@ -11,7 +11,7 @@ router.route("/")
 router
   .route("/:id")
   .get(usersController.findById)
-  .create(usersController.findById)
+  .post(usersController.findById)
   .put(usersController.update)
   .delete(usersController.remove)
 

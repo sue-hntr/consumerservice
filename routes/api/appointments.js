@@ -10,7 +10,7 @@ router.route("/")
 router
   .route("/:id")
   .get(apptsController.findById)
-  .create(apptsController.findById)
+  .post(apptsController.findById)
   .put(apptsController.update)
   .delete(apptsController.remove);
 
