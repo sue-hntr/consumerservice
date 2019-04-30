@@ -1,5 +1,5 @@
 const express = require('express');
-const bodyParser = require('body-parser');
+// const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const session = require('express-session');
 const path = require("path");
@@ -44,8 +44,11 @@ app.use(function (req, res, next){
 app.use(logger("dev"));
 
 // parse incoming requests: if problem look at app.use(express.urlencoded({ extended: true }));
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
+// app.use(bodyParser.json());
+// app.use(bodyParser.urlencoded({ extended: false }));
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+
 
 // serve static files from /public
 app.use(express.static('public'));
@@ -82,6 +85,6 @@ app.use(function(err, req, res, next) {
 });
 
 // listen on port 3000
-app.listen(3000, function () {
-  console.log('Express app listening on port 3000');
+app.listen(PORT, function () {
+  console.log(`Express app listening on port ${PORT}`);
 });

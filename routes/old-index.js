@@ -15,7 +15,7 @@ var mid = require('../middleware');
 
   // GET /index homepage
   router.get('/', function(req, res, next) {
-    res.sendFile(path.join(__dirname, "../public/index.html"));
+    res.sendFile(path.join(__dirname, "/../client/public/index.html"));
   });
 
   // GET /register 

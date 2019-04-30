@@ -1,12 +1,13 @@
-//page.home.js
+//page.bringforms.js
 import React, { Component } from "react";
 // import userDataAxios from "../utils/userDataAxios.js";
+
 import LogoHeader from "../../components/LogoHeader";
 import NavButtons from "../../components/NavButtons";
 
 
 
-class Home extends Component {
+class Forms extends Component {
 
     render() {
 
@@ -15,11 +16,11 @@ class Home extends Component {
             <LogoHeader />
             <NavButtons />
 
-            <h1 className="text-center">CRS Home Page</h1>
+            <h1 className="text-center">Bring Your Forms</h1>
         </div>
       );
     }
   }
   
-  export default Home;
+  export default Forms;
   

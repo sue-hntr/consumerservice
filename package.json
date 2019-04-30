@@ -29,6 +29,6 @@
     "morgan": "^1.9.1",
     "react": "^16.8.6",
     "react-router-dom": "^5.0.0"
-  },
-  "license": "MIT"
+  }
+  
 }
